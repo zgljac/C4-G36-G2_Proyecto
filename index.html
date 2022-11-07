@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./CSS/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./JS/scripts_app.js"></script>
+
+	<title></title>
+</head>
+<body><br>
+	<div class="login-wrap">
+  <div class="login-html">
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar Sesión</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+    <div class="login-form">
+      <div class="sign-in-htm">
+        <div class="group">
+          <label for="usuario" class="label">Usuario</label>
+          <input id="usuario" type="text" class="input">
+        </div>
+        <div class="group">
+          <label for="contrasena" class="label">Contraseña</label>
+          <input id="contrasena" type="password" class="input" data-type="contrasena">
+      <br><br>
+        <div class="group">
+        <input type="button" name="login" id="login-form" value="INGRESAR" class="button" onclick="Ingresar()">
+        </div>

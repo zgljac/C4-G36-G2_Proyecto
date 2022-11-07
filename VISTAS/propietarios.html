@@ -1,0 +1,129 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="../CSS/propietarios.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../JS/propietarios.js" ></script>
+
+<title>Formulario de Propietarios</title>
+
+</head>
+<body>  
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>PROPIETARIOS</h1>
+
+      <!--
+
+                <p>
+                  <label for="nombre" class="colocar_nombre">Número de identificación
+                  </label>
+                    <input type="number" name="Numero_Identificon" id="Numero_Identificaci" required="obligatorio" placeholder="Escribe tu identificación">
+                </p>
+                -->
+              
+                <p>
+                  <label for="Primer_Nombre" class="colocar_Primer_Nombre">Primer Nombre
+          
+                  </label>
+                    <input type="text" name="Primer_Nombre" id="Primer_Nombre" required="obligatorio" placeholder="Escribe tu Primer Nombre">
+                </p>
+            
+                <p>
+                  <label for="Segundo_Nombre" class="colocar_Segundo_Nombre">Segundo Nombre
+                  </label>
+                    <input type="text" name="Segundo_Nombre" id="Segundo_Nombre" placeholder="Escribe tu Segundo Nombre">
+                </p>    
+              
+                <p>
+                  <label for="Primer_Apellido" class="colocar_Primer_Apellido">Primer Apellido
+                  </label>
+                    <input type="text" name="colocar_Primer_Apellido" id="Primer_Apellido" placeholder="Escribe tu Primer Apellido">
+                </p>    
+              
+                <p>
+                  <label for="Segundo_Apellido" class="colocar_Segundo_Apellido">Segundo Apellido
+                  </label>
+                    <input type="text" name="Segundo_Apellido" id="Segundo_Apellido" required="obligatorio" placeholder="Escribe tu Segundo Apellido">
+                </p>    
+              
+                <p>
+                  <label for="correo" class="colocar_correo">Correo
+                  </label>
+                    <input type="email" name="introducir_correo" id="correo" required="obligatorio" placeholder="Escribe Tu Correo">
+                </p>                    
+                
+                <p>
+                   <label for="Telefono" class="colocar_Telefono">Teléfono             
+                  </label>
+                    <input type="tel" name="introducir_Telefono" id="Telefono" required="obligatorio" placeholder="Escribe Número de Teléfono">
+                </p>     
+
+                <p>
+                  <label for="Direccion_Contacto" class="colocar_Direccion_Contacto">Dirección de contacto
+                  </label>
+                <textarea type="text" name="Direccion_Contacto" id="Direccion_Contacto" required="obligatorio" placeholder="Escribe Tu Dirección de contacto"
+
+              >
+                  
+                </textarea>
+
+                </p>                
+              
+              
+
+<form action="" method="" name="">
+
+
+
+  <div id="user"> <!--  esta es la etiqueta con la información que aparecerá con la consulta de la base de datos buscando por el Numero_Identificacion -->  
+    </div>
+    </form>
+<P>Documento de Identidad</P>
+ <input type="text" name="Numero_Identificacion" id="Numero_Identificacion" value="" placeholder="DIGITE SU ID PARA REALIZAR BÚSQUEDA"> 
+
+<br>
+<br>
+
+ <button type="submit" name="enviar_formulario" id="enviar" onclick="Eliminar()"><p>Eliminar Propietario</p></button>
+
+ <button type="submit" name="enviar_formulario" id="enviar" onclick="insertar()"><p>Insertar Propietario</p></button>
+
+                <button type="submit" name="enviar_formulario" id="enviar" onclick="Actualizar()"><p>Actualizar Propietario</p></button>
+
+                
+          
+            
+          
+           <button type="submit" name="enviar_formulario" id="enviar" onclick="UserById()"><p>Mostrar Propietario</p></button>
+
+           <button type="submit" name="enviar_formulario" id="enviar" onclick="iratras()"><p>Volver Al Menú</p></button>
+
+           <!-- <input type="button" value="Imprime esta pagina" onclick="window.print()"> -->
+           
+
+           <center>
+
+           <img src="../IMG/impresora.png"  width="50px"
+            height="50px" align-items="center" onclick="window.print()">
+
+           </center> 
+           
+
+
+      
+
+
+
+      
+           </div>
+    </div>  
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body class="bg-light container">
+    <h1 class="display-4">Facturacion</h1>
+    <hr>
+    <section class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-heade">
+                    <h3 class="card-title">Factura Altos de Bucaramanga</h3>
+                </div>
+                <div class="card-body">
+                    <form class="row">
+                        <div class="from-group col-md-2">
+                            <label for="">Factura Numero:</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="ID factura"
+                                id="id_factura"
+                            />
+                        </div>
+                        <div class="from-group col-md-2">
+                            <label for="">Identificacion del inmueble:</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="ID inmueble"
+                                id="numero_identificacion"
+                            />
+                        </div>
+                        <div class="from-group col-md-6">
+                            <label for="">Direccion</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="Direccion"
+                                id="Direccion"
+                            />
+                        </div>
+                        <div class="from-group col-md-2">
+                            <label for="">Fecha de Generacion</label>
+                            <input type="date" class="form-control" placeholder="Fecha">
+                        </div>
+                        <div class="from-group col-md-2">
+                            <label for="">Numero Identificacion:</label>
+                            <input type="text" class="form-control" placeholder="Numero Identificacion">
+                        </div>
+                        <div class="from-group col-md-6">
+                            <label for="">Propietario:</label>
+                            <input type="text" class="form-control" placeholder="Nombres y apellidos del Propietario">
+                        </div>
+                      
+                     
+                        <div class="from-group col-md-2">
+                            <label for="">Fecha Limite</label>
+                            <input type="date" class="form-control" placeholder="Fecha Limite">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row mt-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <form class="row" id="formDetalle">
+                        <div class="form-grup col-md-2">
+                            <label for="">Cantidad cuotas</label>
+                            <input 
+                            type="number" 
+                            class="form-control" 
+                            id="cantidadCuotas">
+                        </div>
+                        <div class="form-grup col-md-3">
+                            <label for="">Descripcion:</label>
+                            <select id="Selectobservaciones" class="form-control">
+                                <option value="0">--Selecione--</option>
+                                <option value="1">Cuota administracion</option>
+                                <option value="2">Anticipo</option>
+                                <option value="3">Cuota Extraordinaria</option>
+                            </select>
+                        </div>
+                        <div class="form-grup col-md-2">
+                            <label for="">Saldo anterior</label>
+                            <input 
+                            type="number" 
+                            class="form-control" 
+                            id="valAnterior">
+                        </div>
+                        <div class="form-grup col-md-2">
+                            <label for="">Valor mes</label>
+                            <input 
+                            type="number"
+                            class="form-control" 
+                            id="valMes">
+                        </div>
+                        <div class="form-grup col-md-2">
+                            <label for="">Total</label>
+                            <input 
+                            type="number"
+                            class="form-control" 
+                            id="valTotal">
+                        </div>
+                        <div class="form-grup col-md-1">
+                            <button class="btn btn-primary" type="submit">Agregar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <main>
+        <section class="row">
+        </section>
+        <section class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                </div>
+            </div>
+            <div class="col mt-2">
+                <button class="btn btn-dark btn-lg">Guardar Factura</button>
+
+            </div>
+        </section>
+        <section class="row mt-4">
+            <div class="col">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th>Cantidad de cuotas</th>
+                            <th>Descripcion</th>
+                            <th>Saldo Anterior</th>
+                            <th>Valor del mes</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+<script src="../JS/facturas1.js"></script>
+
+</html>
